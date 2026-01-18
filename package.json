@@ -1,0 +1,16 @@
+{
+  "name": "qa-e2e-framework",
+  "version": "1.0.0",
+  "description": "E2E Testing Framework for UI and API Testing",
+  "scripts": {
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:all": "playwright test",
+    "test:ui:headed": "playwright test tests/ui --headed",
+    "test:ui:debug": "playwright test tests/ui --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
